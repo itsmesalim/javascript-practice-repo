@@ -1,0 +1,1878 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Learn Javascript</title>
+  </head>
+  <body>
+    <h3>Java Script (Mocha/ Livescript):</h3>
+    <span>
+      <ul>
+        <li>
+          JavaScript is a programming language created by Brendan Eich in 1995
+          used to create dynamic and interactive web pages.
+        </li>
+        <br />
+
+        <li>
+          JavaScript allows developers to implement complex features on web
+          pages, such as dynamic content, form validation, animations, and more.
+        </li>
+        <br />
+
+        <li>
+          JavaScript is a single-threaded language that executes one task at a
+          time.
+        </li>
+        <br />
+
+        <li>
+          It is an interpreted language which means it executes the code line by
+          line.
+        </li>
+        <br />
+
+        <li>used for frontend & backend boths.</li>
+        <br />
+
+        <li>
+          In 1997, Netscape submitted JavaScript to ECMA International, aiming
+          to create a standardized language that everyone can use. The standard
+          rules was called ECMA-262 and the language “ECMAScript”
+        </li>
+        <br />
+
+        <li>
+          <b>European Computer Manufacturers Association (ECMA): </b> is a
+          non-profit, global standards organization Founded in 1961. Its mission
+          is to create rules that help different technologies work well
+          together, so new products can work smoothly with each other. Many big
+          tech companies are members, like Google, Microsoft, Apple, IBM, Meta,
+          and others.
+        </li>
+        <br />
+
+        <li>
+          Below is a summary of the major ECMAScript versions: <br /><br />
+          <ul>
+            <li>
+              <b>ECMAScript 1 (1997):</b> The first edition, introducing the
+              core features and syntax of the language.
+            </li>
+            <br />
+
+            <li>
+              <b>ECMAScript 2 (1998):</b> it's improved the features of
+              ECMAScript 1 and made the original specification clearer and
+              better.
+            </li>
+            <br />
+
+            <li>
+              <b>ECMAScript 3 (1999):</b> Added regular expression, strict
+              equality (===), try-catch.
+            </li>
+            <br />
+
+            <li>
+              <b>ECMAScript 4 (Not released):</b> A planned major update that
+              was discarded due to stackholders disagreements.
+            </li>
+            <br />
+
+            <li>
+              <b>ECMAScript 5 (2009): </b>Added strict mode, JSON support, and
+              getter/setter functions.
+            </li>
+            <br />
+
+            <li>
+              <b>ECMAScript 6 (2015):</b> Also known as ES6 or ES2015;
+              introduced classes, modules, arrow functions, destructing, let and
+              const, promises, Template literals, and much more.
+            </li>
+            <br />
+
+            <li>
+              <b>ECMAScript 16 (2016):</b> Continued to add features like
+              async/await, optional chaining, Exponentiation operator (**) and
+              more.
+            </li>
+            <br />
+
+            <li>
+              <b>ECMAScript 17 (2017):</b> Introduced features like
+              SharedArrayBuffer, Atomics, and async iteration.
+            </li>
+            <br />
+
+            <li>
+              <b>ECMAScript 18 (2018):</b> Added features such as rest/spread
+              properties, asynchronous iteration, and improvements in regular
+              expressions.
+            </li>
+            <br />
+
+            <li>
+              <b>ECMAScript 19 (2019):</b> Included features like Array.flat(),
+              Array.flatMap(), Object.fromEntries(), and optional catch binding.
+            </li>
+            <br />
+
+            <li>
+              <b>ECMAScript 20 (2020):</b> Introduced BigInt type, nullish
+              coalescing (??), globalThis, optional chaining (?.).
+            </li>
+            <br />
+
+            <li>
+              <b>ECMAScript 21 (2021):</b> Added logical assignment operators,
+              Numeric Separators, Promise.any(), WeakRefs, and more.
+            </li>
+            <br />
+
+            <li>
+              <b>ECMAScript 22 (2022):</b> Included features like Top-level
+              await, class static initialization blocks, and symbolic
+              properties.
+            </li>
+            <br />
+
+            <li>
+              <b>ECMAScript 23 (2023):</b> Continues to enhance the language
+              with features like Symbol.prototype.description,
+              Array.prototype.findLast and findLastIndex, and more syntax
+              improvements.
+            </li>
+            <br />
+
+            <li>
+              <b>ECMAScript 24 (2024):</b> Introduced Object.groupBy,
+              Map.groupBy, Promise.withResolvers, set operations on
+              Set.prototype, Unicode flag for regular expressions
+            </li>
+            <br />
+
+            <li>
+              <a
+                href="https://www.educative.io/blog/javascript-versions-history"
+                target="_blank"
+              >
+                reference
+              </a>
+            </li>
+            <br />
+          </ul>
+        </li>
+      </ul>
+    </span>
+    <br /><br />
+
+    <h3>how we run JavaScript code:</h3>
+    <span style="line-height: 2">
+      to run the javascript code we need a rendring engin which is embedded an
+      any browser.<br />
+      it's used to translate high level language into machine code.
+      <br />
+      But in any web browser their embedded it’s own engine like <br />
+      in chrome browser their embedded V8 engine,<br />
+      in Firefox their install gecko and<br />
+      in edge their install spider monkey,<br />
+      Safari used JavaScript Core etc.
+    </span>
+
+    <h3>JavaScript Syntax:</h3>
+    <span>
+      are the set of rules that define how JavaScript code should be written and
+      structured. like
+      <pre>
+        How to Declare and initialize variables:
+
+        let x = 5; 
+        let y = 6; 
+
+        How to calculate values:
+
+        let z = x + y; 
+
+        how to display output:
+
+        console.log(z); 
+      </pre>
+    </span>
+    <br /><br />
+
+    <h3>variables:</h3>
+    <span>
+      are container for our data used to hold data. They can store different
+      types of data, such as numbers, text, objects, and more. <br />
+      that have some specific rules:
+      <ol>
+        <li>
+          It must start with a letter (a-z, A-Z), underscore (_), or dollar sign
+          ($). like
+          <pre>
+          let myVariable; <br>
+          let _myVariable;  <br>
+          let $myVariable;  <br>
+          let variable1; <br>
+          let variable2; <br>
+          etc...
+
+        </pre>
+        </li>
+
+        <li>
+          it can contain digits after the first character. like
+          <pre>
+            let m1Variable; <br>
+            let _myVariable2;  <br>
+            let $myVariable786;  <br>
+            let variable1; <br>
+            let variable2; <br>
+            etc...          
+          </pre>
+        </li>
+
+        <li>
+          It is case-sensitive, meaning `myVar` and `myvar` are different
+          variables.
+        </li>
+        <br />
+
+        <li>Cannot be a reserved keyword (var, let, const, if, etc.)</li>
+      </ol>
+      <br /><br />
+
+      <b>There are 4 ways to declare a variable in JavaScript:</b>
+      <ol>
+        <li>
+          <b>Automatically:</b>
+          here we no need to use any keyword to declare a variable. like
+          <pre>
+            myVar = 10; 
+          </pre>
+        </li>
+
+        <li>
+          <b>var:</b> it's redeclare and updates any time. and use in global
+          scope and block scope boths. like
+          <pre>
+            var age1;    // only declare
+            age1 = 23;    // initialize
+            age1 = 38;    // update
+            var age1 = 45;   // redeclare and initialize
+            console.log(age1);
+          </pre>
+        </li>
+
+        <li>
+          <b>let:</b>
+          let: let is not redeclare but updated every time. and use only in
+          block scope. like
+          <pre>
+            let age2 = 78; //declare only atonce
+            age2 = 99;  //update and initialize multiple time 
+            age2 = 34;  //update
+
+            let age2 = 56; //error: can't redeclare
+
+            console.log(age2);
+          </pre>
+        </li>
+
+        <li>
+          <b>const:</b>
+          const: const is not redeclare and not updated any time. and use only
+          block scope. like
+          <pre>
+            const pi = 3.14; //declare and initialize only atonce
+
+            pi = 4.56; //error: can't update
+
+            const pi = 5.67; //error: can't redeclare
+
+            console.log(pi);
+          </pre>
+        </li>
+      </ol>
+    </span>
+
+    <h3>JavaScript Data Types:</h3>
+    <span>
+      its represents the nature of data stored in variable. mean specifies that
+      what type of data are stored in variable.
+
+      <h4>Premitive data types:</h4>
+      <span>
+        represents simple immutable values mean that connot be change after the
+        creation. their are 7 primitive data types in JavaScript:
+        <ol>
+          <li>
+            <b>Number:</b> represents both integer and floating-point numbers.
+            Example: `42`, `3.14`
+          </li>
+          <br />
+
+          <li>
+            <b>String:</b> represents a sequence of characters enclosed in
+            single or double quotes. Example: `'Hello, World!'`, `"JavaScript"`
+          </li>
+          <br />
+
+          <li><b>Boolean:</b> Its has only two values i.e. true and false.</li>
+          <br />
+
+          <li>
+            <b>Null:</b> That defines a special value that represents nothing,
+            or empty value. like let age = null; // `null`
+          </li>
+          <br />
+
+          <li>
+            <b>Undefined:</b> represents a variable that has been declared but
+            not assigned a value. like let age; // `undefined`
+          </li>
+          <br />
+
+          <li>
+            <b>Symbol:</b> represents a unique and immutable values primarily
+            used as object property keys.
+
+            <pre>
+              let sym1 = Symbol('id');
+              let sym2 = Symbol('id'); // different from sym1
+              console.log(sym1 === sym2); // false
+            </pre>
+          </li>
+          <br />
+
+          <li>
+            <b>BigInt:</b> represents integer numbers greater then 2.
+            <sup> 53 </sup> Example: ` 2. <sup> 53.</sup> = 9007199254741991n`
+          </li>
+        </ol>
+      </span>
+      <br /><br />
+
+      <h4>Non-Primitive Data Types:</h4>
+      <span>
+        that are derived from primitive data types are known as non-primitive
+        data types.
+
+        <ol>
+          <li>
+            <b>Object: </b> are key-value pairs used to stor deferent type data.
+            like
+            <pre>
+              let person = {
+                name: "alas",
+                age: 25,
+                isMoslim: true,
+              }
+
+              //accessing a value of object
+              console.log("here I only access Person's name:", person.name);
+
+              //Adding new value to object
+              person.email = "alas@example.com";
+              console.log("Updated person = ", person);
+
+              // To update an exuisting value of an objecct
+              person.age = 26;
+              console.log("Person after update:", person);
+
+              // To delete a property from object
+              delete person.isMoslim;
+              console.log("Person after delete:", person);
+
+            </pre>
+          </li>
+
+          <li>
+            <b>Array:</b> are the collection of same or deferent types of data.
+            like const array = [1, 2, 3, "apple", true, "banana", { name:
+            'Object' } ]
+          </li>
+          <br />
+
+          <li>
+            <b>Function:</b> are blocks of code designed to perform particular
+            tasks, which can be invoked. Example:
+            <pre>
+              function greet(name) {
+                return "Hello, " + name;
+              }
+
+              console.log(greet("alas"));
+            </pre>
+          </li>
+          <br />
+
+          <li>
+            <b>Date Object: </b> used to work with dates and times. Example:
+            <pre>
+              let today = new Date();
+              console.log(today);
+            </pre>
+          </li>
+
+          <li>
+            <b>Regular Expressions:</b> a JavaScript object used to define
+            search patterns for matching text in strings. Example
+            <pre>
+              let pattern = /hello/; 
+              let result = pattern.test("hello, world!"); 
+              console.log(result);
+            </pre>
+          </li>
+        </ol>
+      </span>
+    </span>
+
+    <h3>JavaScript operators:</h3>
+    <span>
+      are special symbols used to perform operations on variables and values.
+      their have some type of operators.
+      <ol>
+        <li>
+          <b>Arithmetic Operators:</b> used to perform basic mathematical
+          operations like addition, subtraction, multiplication, and divisions.
+
+          <pre>
+            let sum = 10 + 5; // addition
+            let difference = 10 - 5; // subtraction
+            let product = 10 * 5; // multiplication
+            let quotient = 10 / 5; // division
+            let remainder = 10 % 3; // modulus
+            let increment = ++count; // increment
+            let decrement = --count; // decrement
+            let exponentiation = x**2 // raises the first operand to the power of the second operand
+          </pre>
+        </li>
+        <br />
+
+        <li>
+          <b>Assignment Operators:</b> used to assign values to variables, such
+          as =, +=, -=, etc.
+
+          <pre>
+            let x = 10; // simple assignment
+            x += 5; // adds 5 to x, so x becomes 15    //       x += 5 == x = x + 5
+            x -= 3; // subtracts 3 from x, so x becomes 12 //   x -= 5 == x = x - 5
+            x *= 4; //multiplied 4 with x, so x x becomes 48            
+            x /= 2; // // divides x by 2, so x becomes 24
+            x %= 5; // assigns the remainder of x divided by 5 to x
+          </pre>
+        </li>
+        <br />
+
+        <li>
+          <b>Comparison Operators:</b> used to compare two values, and return a
+          boolean value. , e.g., ==, ===, !=, !==, >, <, >=, <=. Example:
+          <pre>
+            let isEqual = (5 == '5'); // true, equal value
+            let isStrictEqual = (5 === '5'); // false, different types
+            let isGreater = (10 > 5); // true
+            let isGreatorOrEqual = (5 >= 5); // true
+            let isLessthen = (5 < 10); // true
+            let isLessOrEqual = (5 <= 5); // true
+            let notequal = (5 != 3); // true,
+          </pre>
+        </li>
+        <br />
+
+        <li>
+          <b>Logical Operators:</b> used to combine conditional statement and
+          return a boolean result. such as && (and), || (or), ! (not). Example:
+          <pre>
+            let andResult = (true && false); // false
+            let orResult = (true || false); // true
+            let notResult = !true; // false
+            Logical AND (&&):	Returns true if both statements are true	(x > 1) && (y < 10).
+            Logical OR (||):	Returns true if one statement is true	(x == 5) || (y == 5)
+            Logical NOT (!):	Reverses the logical state of an operand	!(x == y)
+          </pre>
+        </li>
+        <br />
+
+        <li>
+          <b>Ternary Operator (Conditional): </b> a shorthand for if-else
+          statement, written as condition ? expr1 : expr2.
+
+          <pre>
+            let age = 20;
+            let status = age >= 18 ? "Adult" : "Minor";
+            console.log(status);  // Adult
+          </pre>
+        </li>
+        <br />
+
+        <li>
+          <b>Nullish Coalescing Operator (??): </b> It returns the right-hand
+          operand when the left-hand operand is null or undefined; Example
+          <pre>
+            let name = null;
+            let user = name ?? "Guest"; // user is "Guest"
+            let count = 0;
+            let value = count ?? 1; // value is 0 (because 0 is not null/undefined)
+          </pre>
+        </li>
+      </ol>
+    </span>
+
+    <h3>Conditional Statements:</h3>
+    <span>
+      it's used to perform different actions based on different conditions.
+      their have some types of Conditions.
+      <ol>
+        <li>
+          <b>If Statement:</b> executes a block of code if a specified condition
+          is true.
+          <pre>
+            if (condition) {
+              // code to execute if condition is true
+            }
+
+            &lt;script&gt;
+            let age = 22;
+            if (age >= 18) {
+              console.log("you can play the game");
+            }
+          &lt;/script&gt;
+          </pre>
+        </li>
+        <br />
+
+        <li>
+          <b>Else Statement:</b> executes a block of code if the previous if
+          condition is false.
+          <pre>
+            if (condition) {
+              // code if true
+            } else {
+              // code if false
+            }
+
+            &lt;script&gt;
+              let height = 4;
+              if(height >= 5){
+                console.log("you are tall enough");
+              }else{
+                console.log("you are short for now");
+              }
+           &lt;/script&gt;            
+          </pre>
+        </li>
+        <br />
+
+        <li>
+          <b>Else If Statement:</b> tests multiple conditions.
+          <pre>
+            if (condition1) {
+              // code if condition1 is true
+            } else if (condition2) {
+              // code if condition2 is true
+            } else {
+              // code if none of the above conditions are true
+            }
+
+            &lt;script&gt;
+              let score = 85;
+              if (score >= 90) {
+                console.log("Grade: A");
+              } else if (score >= 80) {
+                console.log("Grade: B");
+              } else if (score >= 70) {
+                console.log("Grade: C");
+              } else if (score >= 60) {
+                console.log("Grade: D");
+              } else {
+                console.log("Grade: F");
+              }
+            &lt;/script&gt;            
+          </pre>
+        </li>
+        <br />
+
+        <li>
+          <b>Conditional (Ternary) Operator: </b> is a shorthand for if...else.
+          like
+          <pre>
+            condition ? expression1 : expression2;
+            
+            &lt;script&gt;
+              let isMember = true;
+              let access = isMember ? "Granted" : "Denied";
+              console.log(access); // Granted
+            &lt;/script&gt;
+          </pre>
+        </li>
+
+        <li>
+          <b>Switch Statement:</b> selects one of many code blocks to execute.
+          and execute the code blocks that matchs an expression.
+          <pre>
+            switch(expression) {
+              case value1:
+                // code
+                break;
+              case value2:
+                // code
+                break;
+              default:
+                // code
+            }
+
+            &lt;script&gt;
+              let developer = "Webdeveloper";
+
+              switch(developer) {
+                case "Webdeveloper":
+                  console.log("Develops websites");
+                  break;
+                case "MobileDeveloper":
+                  console.log("Develops mobile apps");
+                  break;
+                case "DataScientist":
+                  console.log("Analyzes data");
+                  break;
+                default:
+                  console.log("Unknown profession");
+                  break;
+              }
+            &lt;/script&gt;
+          </pre>
+        </li>
+      </ol>
+    </span>
+
+    <h3>JavaScript Loops:</h3>
+    <span>
+      it's executes a block of code a number of times. that's have some types.
+      <ol>
+        <li>
+          <b>For Loop:</b> repeats a block of code a specified number of times.
+          their have three expressions. <br />
+          expr1: is define frome which number of time we start iterations.
+          <br />
+          expr2: is the condition that define how many time the loop itrates.
+          <br />
+          expr3: is increase a value each time the block code has been exicuted.
+          <pre>
+            for (expr1; expr2; expr3) {
+              // code block to be executed
+            }
+
+            &lt;script&gt;
+              for (let i = 0; i < 10; i++) {
+                console.log(i);
+              }
+            &lt;/script&gt;
+          </pre>
+        </li>
+
+        <li>
+          <b>While Loop:</b> repeats as long as the condition is true.
+
+          <pre>
+            let i = 0;
+            while (i < 5) {
+              console.log(i);
+              i++;
+            }
+
+            &lt;script&gt;
+              let i = 0;
+              while (i < 5) {
+                console.log(i);
+                i++;
+              }
+
+
+              let number = 0;
+              while(number < 30){     
+                     
+                console.log(`${number} is ${number % 2 === 0 ? " is even " : " is odd"}`);
+                number++;
+              }
+            &lt;/script&gt;
+          </pre>
+        </li>
+
+        <li>
+          <b>Do While Loop:</b> executes the block at least once then repeats if
+          condition remains true.
+          <pre>
+            let i = 0;
+            do {
+              console.log(i);
+              i++;
+            } while (i < 5);
+            <br>
+
+            &lt;script&gt;
+              let i = 0;
+              do {
+                console.log(i);
+                i++;
+              } while (i < 5);
+            &lt;/script&gt;
+            <br>
+
+            &lt;script&gt;
+              let value = 0;
+              do{             
+
+                let remainder = value % 7;
+                console.log(`the reminder of ${value} is  ${remainder }`);
+                value++;
+              }while (value < 20);
+            &lt;/script&gt;
+          </pre>
+        </li>
+
+        <li>
+          <b> for-of loop: </b> are used to itrate and execute every element of
+          an array. Like
+          <pre>
+            let arry = [10, 20, 30, 40, 50];
+            for (const element of arry) {
+            console.log(`arry = [${element}]); 
+            }
+          </pre>
+        </li>
+
+        <li>
+          <b>for-in loop: </b> are used to execute each key or property of an
+          object. Like
+          <pre>
+            let obj = {a : 1, b : 2, c : 3 }
+
+            for(let key in obj){
+              console.log(`key ” : “ obj[key]);
+            }
+          </pre>
+        </li>
+      </ol>
+    </span>
+
+    <h3>Functions:</h3>
+    <span>
+      a reusable block of code use to perform a perticular task. it,s exicute
+      when they are called. Example
+      <pre>
+        function myName(){
+          console.log("my name is Salim Ullah");
+        }
+
+        myName();
+      </pre>
+      <br />
+
+      <h4>Parameter:</h4>
+      <span>
+        the identifire or values that accept a function inside parenthesis.
+        example
+        <pre>
+          function myAge(age){
+            console.log(`I am ${age} years old);
+          }
+
+          here age inside the parenthesis is parameter.
+        </pre>
+      </span>
+
+      <h4>Arguments:</h4>
+      <span>
+        are the value that we pass inside the function call parenthesis.
+        <pre>
+          myAge(25);
+
+          here the 25 is argument value.
+        </pre>
+      </span>
+
+      <h4>Rest Parameters:</h4>
+      <span>
+        are used to pass multiple arguments to one parameter of function. it,s
+        denoted by (...) dots. Like
+        <pre>
+          function restFunction(...arguments){
+            let sum = 0;
+            for(let arg of arguments){
+              sum += arg;
+            }
+            console.log(`sum = ${sum});
+          }
+
+          restFunction(2,5,6,7,1,9,4,5,8);
+
+
+
+          function froutsCombination([...frouts]){
+              
+            for(frout of frouts){
+              console.log(`this is ${frout}`);
+
+             }
+
+          }
+
+          froutsCombination(["apple", "banana", "mangos"]);
+        </pre>
+      </span>
+
+      <h4>Function Expression:</h4>
+      <span>
+        when we assign to a variable it,s called function expression. like
+        <pre>
+          const funexpression = function(value1, value2){
+            let number = value1 + value2;
+            console.log("number = ", number);
+          }
+
+          funexpression(10, 20);
+        </pre>
+      </span>
+
+      <h4>Arrow Function:</h4>
+      <span>
+        are a shorter syntax for writing function expressions, introduced in
+        ES6. They use the `=>` syntax. Example:
+        <pre>
+
+          cont addnumbers = function add(a, b){
+            return a + b;
+          };
+          
+          const add = (a, b) =>{
+            return a + b;
+          };
+
+          console.log(add(5, 10));
+        </pre>
+        Or, if the function has a single expression, it can be written as:
+        <pre>
+          const multiply = (a, b) => a * b;
+
+          console.log(multiply(4, 6));
+        </pre>
+      </span>
+
+      <h4>heigher order Function:</h4>
+      <span>
+        when a function takes another function as an argument is called
+        higher-order function.
+      </span>
+
+      <h4>call-back function:</h4>
+      <span>
+        the function which is passed as an argument to another function and then
+        called inside this function is called call-back function.
+      </span>
+    </span>
+
+    <h3>DOM (Ducoment Object Model):</h3>
+    <span>
+      a platform that used to dynamically access and update the content,
+      structure and style of a ducoment.
+    </span>
+
+    <h3>The HTML DOM (Document Object Model):</h3>
+    <span>
+      through html dom we can access and update the HTML elements
+      programmatically using JavaScript. In the DOM, all HTML elements are
+      defined as objects.
+
+      <h4>What we Can Do With the HTML DOM:</h4>
+      <span>
+        <ol>
+          <li>create and add the new elements to html page</li>
+          <li>change or remove the existing elements in the page</li>
+          <li>change the style of the elements</li>
+          <li>add event listner to the element to make it interactive</li>
+        </ol>
+      </span>
+
+      <h4>How to find or select HTML Elements using DOM:</h4>
+      <span>
+        to find an elements we can use various methods. like
+        <ol>
+          <li>
+            <b>getElementById:</b> used to find an element that's have a uniqe
+            id. Example
+            <pre>
+              &lt;h1 id="demo1"&gt;&lt;/h1&gt;
+
+              document.getElementById("demo1").innerHTML = "this is h1 tag";
+
+              <h1 id="demo1">h1 tag</h1>
+            </pre>
+          </li>
+          <br /><br />
+
+          <li>
+            <b>getElementsByClassName: </b>
+            used to find all those elements that have a specific class name.
+            Example
+            <pre>
+              &lt;div class="myClass"&gt;Item 1&lt;/div&gt;
+              &lt;div class="myClass"&gt;Item 2&lt;/div&gt;
+
+              <h1 class="myClass">h1</h1>
+              <div class="myClass">div</div>
+              <p class="myClass">p</p>
+              <span class="myClass">span</span>
+              <section class="myClass">section</section>
+              <div class="myClass">div</div>
+
+              const myClassElements = document.getElementsByClassName("myClass");
+              console.log(myClassElements);
+            </pre>
+          </li>
+          <br /><br />
+
+          <li>
+            <b>getElementsByTagName: </b> used to find all elements with a
+            specific tag name. Example:
+            <pre>
+              &lt;p&gt;Paragraph 1&lt;/p&gt;
+              &lt;p&gt;Paragraph 2&lt;/p&gt;
+
+              const paragraphs = document.getElementsByTagName("p");
+              console.log(paragraphs);
+            </pre>
+          </li>
+          <br /><br />
+
+          <li>
+            <b>querySelector:</b> used to find the first element that matches a
+            CSS selector like thier have some elements thier class name is same
+            so query selector only find the first element of this class.
+            Example:
+            <pre>
+              &lt;h1 class="myClass"&gt;h1&lt;/h1&gt;
+              &lt;div class="myClass"&gt;div&lt;/div&gt;
+              <p class="myClass">p</p>
+              <span class="myClass">span</span>
+              <section class="myClass myse">section1</section>
+              <div class="myClass">div</div>
+            </pre>
+            <!-- <li> querySelector: <code>document.querySelector('.selector')</code></li> -->
+          </li>
+
+          <!-- <li>using querySelectorAll: <code>document.querySelectorAll('.selector')</code></li> -->
+        </ol>
+      </span>
+
+      <h4>How to change HTML elements content</h4>
+
+      <span>
+        we can change the content of HTML elements using JavaScript by accessing
+        their properties like `innerHTML`. Example
+        <pre>
+          &lt;h1 id="demo2"&gt;Original Text&lt;/h1&gt; 
+          &lt;script&gt; document.getElementById("demo2").innerHTML = "Updated Text"; &lt;/script&gt; 
+         
+          This will replace the existing content inside the element with id
+          "demo1".
+
+          <h1 id="changeContent">I am h1 element </h1>
+        </pre>
+
+        we can change images like
+
+        <pre>
+
+          &lt;img id="changeImg" src="/images/butterfly.jpg" alt="butterfly"&gt;
+
+          &lt;script&gt;document.getElementById("changeImg").src = "/images/bridge.png";&lt;/script&gt;
+          
+          <img id="changeImg" src="/images/butterfly.jpg" alt="butterfly" />
+        </pre>
+
+        we can change the content style like
+
+        <pre>
+          &lt;h1&gt; id="changeStyle"> I am h1 element and change my style &lt;/h1&gt;
+          
+          &lt;script&gt; 
+            document.getElementById("changeStyle").style.color = "red"; 
+            document.getElementById("changeStyle").style.fontSize = "24px"; 
+            document.getElementById("changeStyle").style.fontWeight = "bold"; 
+          &lt;/script&gt;
+          <h1 id="changeStyle"> I am h1 element and I am change using JavaScript </h1>
+        </pre>
+      </span>
+
+      <h4>Event listener</h4>
+      <span>
+        the methods are used to do some action with elements. Like
+
+        <pre>
+          &lt;script&gt;
+            const changesByEvents = document.getElementById("eventButton");
+
+            changesByEvents.addEventListener("click", function () {
+            changesByEvents.innerHTML = "I am Clicked";
+            changesByEvents.style.backgroundColor = "pink";
+            changesByEvents.style.border = "1px solid green";
+            changesByEvents.style.borderRadius = "10px";
+            changesByEvents.style.outline = "none";
+            });
+          &lt;/script&gt;
+
+          <button id="addEventListenerbtnId">Click Me</button> <br><br> 
+          <button id="eventHandlerbtnId" onclick="myFunction2()">Click Me</button> onClick event,
+         
+        </pre>
+
+        <b>a basic project using eventListener</b>
+
+        <div id="main-bulb">
+          <div id="bulbKey"></div>
+          <button id="bntKey">ON</button>
+        </div>
+      </span>
+    </span>
+    <br /><br />
+
+    <h3>JavaScript 2015 (ES6) Features:</h3>
+    <span>
+      thier have some feature of es6 like.
+      <ol>
+        <li><b>let: </b> declare a variable with block scope</li>
+        <li><b>const: </b> declare a variable immutable</li>
+        <li>
+          <b>Arro Fuction:</b> is the shortest way to write a function. like
+          <pre>
+            &lt;script&gt;
+              const myFunction = function (a, b) {
+                z = a + b;
+                console.log("result of normal function, z = ", z);
+              };
+
+              myFunction(34, 8);
+
+              const myArrowFunction = (a, b) => {
+                z = a + b;
+                console.log("result of Arrow Function is, z = ", z);
+              };
+
+              myArrowFunction(45, 7);
+            &lt;/script&gt;
+          </pre>
+        </li>
+
+        <li>
+          <b>object destructuring: </b>Assign an object values to a variable.
+          Like
+          <pre>
+            const objectDestructuring = {
+              firstName: "king",
+              lastName: "star",
+              age: 24,
+              designation: "web developer",
+            };
+
+            let { firstName, lastName, age: mySelfAge, designation } = objectDestructuring;
+
+
+            document.getElementById(
+              "selfIntro"
+            ).innerHTML = `I am ${firstName} ${lastName} and I am ${age} years old, and I am a ${designation}`;
+          </pre>
+
+          <p id="selfIntro"></p>
+        </li>
+        <br /><br />
+
+        <li>
+          <b> Array Destructuring: </b> are used to assign an array valuse to a
+          variable. Like
+          <pre>
+            const froutsAarray = ["mango", "orange", "banana", "coconut"];
+
+            const [mangoFrout, orangeFrout] = froutsAarray;
+            document.getElementById(
+              "frouts"
+            ).innerHTML = `I like ${mangoFrout} and ${orangeFrout} very much`;
+          </pre>
+          <p id="frouts"></p>
+        </li>
+
+        <li>
+          <b> The Spread (...) Operator: </b> are used to joint some arrays.
+          like
+          <pre>
+            const array1 = [34, 56, 78, 89];
+            const array2 = [80, 67, 56, 45, 23, 90];
+
+            const array3 = [...array1, ...array2];
+            document.getElementById("spreadArray").innerHTML = array3;
+          </pre>
+        </li>
+        <p id="spreadArray"></p>
+
+        <li>
+          <b> for-of loop: </b> are used to itrate and execute every element of
+          an array. Like
+          <pre>
+            const arrayOfLoop = ["apple", "mango", "banana", "appricot", "coconut", "orange"];
+
+            let elementsOfArray = "";
+
+            for (const element of arrayOfLoop) {
+
+              elementsOfArray += element + " ";
+
+              document.getElementById("arrayOfLoopId").innerHTML = elementsOfArray;
+            } 
+          </pre>
+          <p id="arrayOfLoopId"></p>
+        </li>
+
+        <li>
+          <b>Map() method: </b> are used to change the lements of an array and
+          rturn a new array. Example
+          <pre>
+            const origionalarray = [2, 7, 6, 4, 8, 9];
+
+            const arrayWithMap = origionalarray.map((elements) => {
+              let arrayValue = " "+ elements * elements;
+              return arrayValue;
+            });
+
+            document.getElementById(
+              "origionalArrayId"
+            ).innerHTML = `origional array = ${origionalarray}`;
+
+            document.getElementById(
+              "arrayId"
+            ).innerHTML = `new array using map method = ${arrayWithMap}`;
+          </pre>
+          <p id="origionalArrayId"></p>
+          <p id="arrayId"></p>
+        </li>
+
+        <li>
+          <b>filter method: </b> used to filtering an array and create a new
+          array. example
+
+          <pre>
+            const arrayForFilter = [2, 5, 3, 6, 8, 1, 0, 4, 7, 9];
+
+            const filteredArray = arrayForFilter.filter((arrayForFilterElement) => {
+              return arrayForFilterElement % 2 === 0;
+            });
+
+            console.log("filteredArray", filteredArray);
+
+            document.getElementById(
+              "filteredOragionalArrayId"
+            ).innerHTML = `Befor Filtered Array = ${arrayForFilter}`;
+
+            document.getElementById(
+              "filteredArrayId"
+            ).innerHTML = `Filtered Array = ${filteredArray}`;
+          </pre>
+          <p id="filteredOragionalArrayId"></p>
+          <p id="filteredArrayId"></p>
+          <p id="wordIncludeN"></p>
+          <p id="mango"></p>
+        </li>
+
+        <li>
+          <b>reduce() method: </b> use to combine array elements into a single
+          value based on a specified accumulator function. Example
+          <pre>
+            const reduceArry = [2, 3, 4, 6, 7, 4, 2, 7];
+
+            const sumOfReduceArray = reduceArry.reduce((accumulator, currentValue) => {
+              return accumulator + currentValue;
+            });
+
+            document.getElementById(
+              "reduceArrayId"
+            ).innerHTML = `result of reduced array = ${sumOfReduceArray}`;
+          </pre>
+          <p id="reduceArrayId"></p>
+          <p id="multOfRedArray"></p>
+        </li>
+      </ol>
+    </span>
+    <br /><br />
+
+    <h3>Events:</h3>
+    <span>
+      are actions with an element like clicking on button, mouseover an element
+      or loading of the page etc.
+    </span>
+
+    <h3>Event Listener:</h3>
+    <span>
+      an event listener is the mechanism that waits for an event to occur. here
+      we write it completely inside the js file. like
+      <pre>
+        &lt;script&gt; 
+          const changesByEvents = document.getElementById( "addEventListenerbtnId" );
+          changesByEvents.addEventListener("click", function () {
+          changesByEvents.innerHTML = "I am Clicked using addEventListener";
+          changesByEvents.style.backgroundColor = "pink";
+          changesByEvents.style.border = "1px solid green";
+          changesByEvents.style.borderRadius = "10px"; 
+          changesByEvents.style.outline = "none"; }); 
+        &lt;/script&gt;
+      </pre>
+    </span>
+
+    <h3>Events Handler:</h3>
+    <span>
+      event handler is the specific function that is executed in response to
+      that event. we can write it inside the HTML element as an attribute like
+      onclick, onmouseover, etc.
+
+      <button id="eventHandlerId" onclick="eventFunction()">Click me</button>
+
+      <pre>
+        &lt;script&gt;
+          const changesByEventHandler = document.getElementById("eventHandlerId");
+          const eventFunction = () => {
+            changesByEventHandler.innerHTML = "I am Clicked using eventHandler";
+            changesByEventHandler.style.backgroundColor = "red";
+            changesByEventHandler.style.border = "1px solid green";
+            changesByEventHandler.style.borderRadius = "10px";
+            changesByEventHandler.style.outline = "none";
+            changesByEventHandler.style.color = "white";
+          };
+        &lt;/script&gt;
+      </pre>
+    </span>
+
+    <h3>Event Types:</h3>
+    <span>
+      it,s some types is
+      <ol>
+        <li>
+          Mouse Events:
+          <ul>
+            <li>
+              <b>onClick: </b> trigger when the user single-clicks an element.
+              like.
+              <button id="singleClickId" onclick="singleClick()">
+                Click me one time
+              </button>
+
+              <pre>
+                &lt;script&gt; 
+                  const singleClickevent = document.getElementById("singleClickId"); 
+                  const singleClick = () => { 
+                    singleClickevent.innerHTML = " I m change with one click"; 
+                  };
+                &lt;/script&gt;
+              </pre>
+            </li>
+
+            <li>
+              <b>ondblClick: </b> trigger when the user doubble-clicks an
+              element. Like
+
+              <button id="dblClicks" ondblclick="dblClick()">
+                Dubble Click me
+              </button>
+
+              <pre>
+                &lt;script&gt;
+                  const dblClickEvent = document.getElementById("dblClicks"); 
+                  const dblClick = () => { dblClickEvent.innerHTML = "I m change with
+                    doubble clicks"; 
+                  };
+              &lt;/script&gt;
+              </pre>
+            </li>
+
+            <li>
+              <b> onMouseover & onMouseout: </b> onMouseover do change an
+              element when the pointer enters it, while onMouseout returns it to
+              its original state when the pointer leaves. like
+              <div
+                id="mouseOverOutId"
+                onmouseover="highlight()"
+                onmouseout="unhighlight()"
+                style="
+                  padding: 10px;
+                  border: 1px solid black;
+                  background-color: white;
+                  cursor: pointer;
+                "
+              >
+                Hover Over Me
+              </div>
+            </li>
+          </ul>
+        </li>
+        <br /><br />
+
+        <li>
+          Keyboard Events:
+          <ul>
+            <li>
+              <b>keydown: </b> it,s occure when a key is pressed down by the
+              user.
+            </li>
+            <li>
+              <b>keypress: </b> it,s function call when we pressed a
+              charachtered key.
+            </li>
+            <li><b> keyup: </b> it,s occure when a key is released.</li>
+          </ul>
+
+          Example of keyboard events:
+          <form action="#">
+            <input
+              type="text"
+              id="keyInputId"
+              onkeydown="keydownFun()"
+              onkeypress="keypressFun()"
+              onkeyup="keyUpFun()"
+            />
+          </form>
+        </li>
+        <br /><br />
+
+        <li>
+          Form Events:
+          <ul>
+            <li>
+              <b>onsubmit:</b> Triggered when a form is submitted.
+              <form action="#" onsubmit="handleSubmit(event)">
+                <input type="text" name="name" />
+                <input type="submit" value="submit" />
+              </form>
+              <pre>
+                &lt;form action="#" onsubmit="handleSubmit(event)"&gt;
+                  &lt;input type="text" name="name" /&gt;
+                  &lt;input type="submit" value="submit" /&gt;
+                &lt;/form&gt;
+
+                &lt;script&gt;
+                  const handleSubmit = (event) => {
+                    event.preventDefault();
+                    alert("Form Submitted!");
+                  };
+                &lt;/script&gt;
+              </pre>
+            </li>
+            <li>
+              <b>onchange:</b> Triggered when the value of an input element
+              changes.
+
+              <select id="changeId" onchange="changeFun()">
+                <option value="Data Structure">Data Structure</option>
+                <option value="Algorithm">Algorithm</option>
+                <option value="Computer Network">Computer Network</option>
+                <option value="Operating System">Operating System</option>
+                <option value="HTML">HTML</option>
+              </select>
+              <p id="sudo"></p>
+
+              <pre>
+                &lt;select id="changeId" onchange="Geeks()"&gt; 
+                  &lt;option value="Data Structure"&gt; Data Structure&lt;/option&gt; 
+                  &lt;option value="Algorithm"&gt; Algorithm&lt;/option&gt; 
+                  &lt;option value="Computer Network"&gt; Computer Network&lt;/option&gt; 
+                  &lt;option value="Operating System"&gt; Operating System&lt;/option&gt; 
+                  &lt;option value="HTML"&gt; HTML&lt;/option&gt; 
+                &lt;/select&gt;
+                &lt;p id="sudo"&gt;&lt;/p&gt;
+
+                &lt;script&gt;
+                  function Geeks() {
+                    let Subject = document.getElementById("changeId").value;
+                    document.getElementById("sudo").innerHTML = "Selected Subject: " + Subject;
+                    alert(`the value is change to ${Subject} `);
+                  }
+                &lt;/script&gt;
+              </pre>
+            </li>
+
+            <li>
+              <b>focus:</b> Triggered when an element get focused.
+
+              <input type="text" id="focusId" onfocus="focusFun()" />
+              <pre>
+                &lt;input type="text" id="focusId" onfocus="focusFun()"/&gt;
+
+                &lt;script&gt;
+                  const focusFun = () =>{
+                    document.getElementById("focusId").style.backgroundColor = "green";
+                  }
+                &lt;/script&gt;
+              </pre>
+            </li>
+            <li>
+              <b>blur:</b> Triggered when an element loses focus.
+
+              <input type="text" id="blurId" onblur="blurFun()" />
+
+              <pre>
+                &lt;input type="text" id="blurInput" onblur="handleBlur()"&gt;
+                &lt;script&gt;
+                  const blurFun = () => {
+                    let y = document.getElementById("blurId");
+                    y.value = y.value.toUpperCase();
+                  };
+                &lt;/script&gt;
+              </pre>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </span>
+
+    <h3>CSS Animations:</h3>
+    <span>
+      through animations we can change the element style from one to another.
+      thier have some properties and rules.
+
+      <ol>
+        <li>
+          <b>@keyframes:</b> is a function for animation used to control the
+          animation properties in deferent points for an element. it,s have two
+          values
+          <ul>
+            <li>
+              <b>From: </b>which define the starting point of an element
+              animation.
+            </li>
+            <li>
+              <b>To: </b>which define the ending point of an element animation
+            </li>
+            <li>
+              <b>Note: </b>this value we can give in % like the starting point
+              have 0% and ending point have 20%, 30%, 100% or which we wants.
+            </li>
+
+            <b>Example of @keyframes:</b>
+            <pre>
+              @keyframes animation-name{
+                from{
+                  top: 30px;
+                  left: 20px;
+                }
+
+                to{
+                  top: 70px
+                  left: 50px
+                }
+              }
+
+              or we can use % values Like
+
+              @keyframes animation-name{
+                0%{
+                  top: 10px;
+                  left: 15px;
+                }
+
+                20%{
+                  top: 20px;
+                  left: 25px;
+                }
+
+                50%{
+                  top: 60px;
+                  left: 70px;
+                }
+
+                100%{
+                  top: 90px;
+                  left: 120px;
+                }
+              }
+            </pre>
+          </ul>
+
+          it is the basic example of @keyframe function animation
+          <div id="animatId"></div>
+        </li>
+        <br /><br />
+
+        <li>
+          <b>animation-name Property:</b>
+          specifies a name for an element to bind this element with @keyframe.
+          like 'animation-name: animatNamepro;'
+        </li>
+        <br /><br />
+
+        <li>
+          <b>animation-duration Property: </b>it specifies how many time an
+          animation should take to complete one cycle. like '
+          animation-duration: 4s;'
+        </li>
+        <br /><br />
+
+        <li>
+          <b>animation-delay Property: </b>it Specifies a delay for the start of
+          an animation. like 'animation-delay: 3s'; <br />
+          here it,s wait for 3 seconds then start animtaions.
+        </li>
+        <br /><br />
+
+        <li>
+          <b>animation-iteration-count Property: </b> it specifies how many
+          times the animation should run. like 'animation-iteration-count: 5 /
+          infinite;'
+          <br />
+          'infinite' mean its iteration-count have Continuesly runing. like
+          'animation-iteration-count: infinite;'
+        </li>
+        <br /><br />
+
+        <li>
+          <b>animation-direction Property: </b> it specifies the animation
+          should be played forwords, backwrods, or in alternate cycle. lik
+          'animation-direction: normal/ reverse/ alternate/ alternate-reverse;'
+          <ul>
+            <li><b>normal: </b>the animation as played as normal (forward).</li>
+            <li>
+              <b>reverse: </b>the animation is played in reverse direction
+              (backward).
+            </li>
+
+            <li>
+              <b>alternate: </b>The animation is played forwards first, then
+              backwards
+            </li>
+            <li>
+              <b>alternate-reverse: </b>The animation is played backwards first,
+              then forwards
+            </li>
+          </ul>
+        </li>
+        <br /><br />
+
+        <li>
+          <b>animation-timing-function Property: </b>it Specifies the speed
+          curve of the animation. that have some values.
+          <ul>
+            <li>
+              <b>ease: </b> Specifies an animation with a slow start, then fast
+              then end slow.
+            </li>
+            <li>
+              <b>linear: </b>Specifies an animation with the same speed from
+              start to end.
+            </li>
+            <li><b>ease-in: </b>Specifies an animation with a slow start</li>
+            <li><b>ease-out: </b>Specifies an animation with a slow end</li>
+            <li>
+              <b>ease-in-out: </b>Specifies an animation with a slow start and
+              end
+            </li>
+            <li>
+              <b>cubic-bezier(n,n,n,n):</b> Lets you define your own values in a
+              cubic-bezier function
+            </li>
+          </ul>
+        </li>
+        <br /><br />
+
+        <div class="animationMainDiv">
+          <div class="animationPro"></div>
+
+          <div class="animationDirectionPro"></div>
+          <div class="animationTimFuncPro"></div>
+          <div class="animationShortnadPro"></div>
+        </div>
+        <br /><br />
+      </ol>
+    </span>
+
+    <h3>DOM Traversing:</h3>
+    <span>
+      are used to select an element indirectly like selecting parent element of
+      an element, selecting chield element of an element, selecting sibling
+      element of an element etc. thier some ways to select an element.
+
+      <ol>
+        <p>
+          <b>Element Node: </b> Represents HTML elements like &lt;div&gt;,
+          &lt;p&gt;, &lt;a&gt;, etc. <br /><br />
+          <b>Text Node: </b> Represents the text inside HTML elements. For
+          example, the text “Hello World” inside a tag is a text node.
+          <br /><br />
+
+          <b>Attribute Node: </b> Represents an attribute of an element. For
+          example, the href attribute inside an &lt;a&gt; tag (&lt;a
+          href=”https://example.com”&gt;Link&lt;/a&gt;) is an attribute node.
+        </p>
+
+        <li>
+          <b>parentNode: </b>use to access pareant element of an element like I
+          select the parent of box1 div which is main-selector div.
+        </li>
+        <br />
+
+        <li>
+          <b>childNodes: </b>use to access all the chield elements of an
+          element. it,s returns all nodes like text nodes, element nodes, and
+          comment nodes.
+        </li>
+        <br />
+
+        <li>
+          <b>children: </b>it,s also use to acccess all the child elements of an
+          element. but it,s only access the element nodes.
+        </li>
+        <br />
+
+        <li>
+          <b>firstChild: </b> use to access the first child node of an element.
+          This can be a text node, element node, or comment node.
+        </li>
+        <br />
+
+        <li>
+          <b>firstElementChild: </b> use to access the first child element of an
+          element. This only be an element node.
+        </li>
+        <br />
+
+        <li>
+          <b>lastChild: </b>use to access the last child node of an element.
+          This can be a text node, element node, or comment node.
+        </li>
+        <br />
+
+        <li>
+          <b>lastElementChild: </b>use to access the last child element of an
+          element. This only be an element node.
+        </li>
+        <br />
+
+        <li>
+          <b>previousElementSibling: </b>use to access the previous element of
+          the selected element.
+        </li>
+        <br />
+
+        <li><b>createElement(): </b> use to create new element dynamically.</li>
+        <br />
+        <li>
+          <b>appendChild(): </b>use to show the new created element on webpage.
+          and it,s always shows the new element in end.
+        </li>
+        <br />
+
+        <li>
+          <b>insertBefore(): </b>use to insert the new element before the
+          specified element.
+        </li>
+        <br />
+
+        <li>
+          <b>replaceChild(): </b>use to replace an existing element with new
+          one.
+        </li>
+        <br />
+
+        <li>
+          <b>removeChilde(): </b>use to remove an element from a list. here I
+          want to remov box3.
+        </li>
+        <br />
+      </ol>
+
+      <div id="main-selector" class="main-selectorclass">
+        this is first text node
+        <div id="box1" class="boxes">box1</div>
+        <div id="box2" class="boxes">box2</div>
+        <div id="box3" class="boxes">box3</div>
+        <div id="box4" class="boxes">box4</div>
+        <div id="box5" class="boxes">box5</div>
+        <div id="box6" class="boxes">box6</div>
+        <div id="box7" class="boxes">box7</div>
+        <div id="box9" class="boxes">box9</div>
+        this is last text node
+      </div>
+
+      <div id="pareantInsideDiv"></div>
+    </span>
+
+    <h3>JavaScript Storage:</h3>
+    <span>
+      it,s enables websites to store data locally within a user's browser as
+      key-value pairs. it,s have some types like.
+      <ol>
+        <li>
+          <b>Local Storage: </b>Data stored in localStorage persists even after
+          the browser is closed and reopened. The data does not expire unless
+          explicitly deleted. this data is accessible across different pages of
+          the same website. but not access across different websites or tabs.
+          it,s capacity have 5MB to 10MB.
+        </li>
+        <br /><br />
+
+        <li>
+          <b>Session Storage: </b> Data stored in sessionStorage is only
+          available for the duration of the page session. mean It stores data
+          for the page until the tab or browser is closed. this data is
+          accassable only within the same tab. it,s capacity have 5MB.
+        </li>
+        <br /><br />
+
+        <li>
+          <b>Cookies: </b> it can have an expiration date or be session-based.
+          If no expiration is set, they are deleted when the browser is closed.
+          Cookies are sent with every HTTP request(server side as well as client
+          side). it,s capacity have 4KB.
+        </li>
+        <br /><br />
+
+        <b>setItem() method: </b>
+        use to store data as a key value pairs in local storage.
+        <br /><br />
+
+        <b>getItem() method: </b>
+        use to get data from local storage.
+        <br /><br />
+
+        <b>removeItem() method: </b>
+        use to remove an item from local storage.
+        <br /><br />
+
+        <b>clear() method: </b>
+        use to clearly remove all the data from local storage.
+        <br />
+        <br />
+
+        <p id="showinData"></p>
+      </ol>
+    </span>
+
+    <ol>
+      <li>variable</li>
+      <br />
+      <li>variable declaration</li>
+      <br />
+      <li>variable initialization</li>
+      <br />
+      <li>var</li>
+      <br />
+      <li>let</li>
+      <br />
+      <li>const</li>
+      <br />
+      <li>data types</li>
+      <br />
+      <li>
+        premitive data types
+        <ul>
+          <li>number data type</li>
+          <br />
+          <li>string data type</li>
+          <br />
+          <li>boolean data type</li>
+          <br />
+          <li>null data type</li>
+          <br />
+          <li>undefined data type</li>
+          <br />
+          <li>bagint data type</li>
+          <br />
+          <li>symble data type</li>
+          <br />
+        </ul>
+      </li>
+      <br />
+      <li>
+        non-premitive data types
+        <ul>
+          <li>object</li>
+          <br />
+          <li>array</li>
+          <br />
+          <li>date object : new Date()</li>
+          <br />
+          <li>functions</li>
+          <br />
+        </ul>
+      </li>
+      <br />
+      <li>
+        Arithmetic operators: addition, subtraction, multiplication, division,
+        modulus, increment, decrement
+      </li>
+      <br />
+      <li>assignment operator: =, +=, -=, *=, /=</li>
+      <br />
+      <li>Comparison operators: ==, ===, !=, >, <, >=, <=</li>
+      <br />
+      <li>logical operators: &&, ||, !</li>
+      <br />
+      <li>nullish operator: ??</li>
+      <br />
+      <li>if statement</li>
+      <br />
+      <li>else statement</li>
+      <br />
+      <li>else-if statement</li>
+      <br />
+      <li>conditional(ternary) operator:</li>
+      <br />
+      <li>switch statement</li>
+      <br />
+      <li>default case</li>
+      <br />
+      <li>break</li>
+      <br />
+      <li>for loop</li>
+      <br />
+      <li>while loop</li>
+      <br />
+      <li>do while loop</li>
+      <br />
+      <li>for-of loop</li>
+      <br />
+      <li>for-in loop</li>
+      <br />
+      <li>function</li>
+      <br />
+      <li>function expression</li>
+      <br />
+      <li>arrow-function</li>
+      <br />
+      <li>parameters</li>
+      <br />
+      <li>arguments</li>
+      <br />
+      <li>default parameter</li>
+      <br />
+      <li>...rest parameter</li>
+      <br />
+      <li>nested function</li>
+      <br />
+      <li>anonymous function</li>
+      <br />
+      <li>call-back function</li>
+      <br />
+      <li>pure-function</li>
+      <br />
+      <li></li>
+      <br />
+      <li></li>
+      <br />
+      <li></li>
+      <br />
+      <li></li>
+      <br />
+    </ol>
+
+    <p id="nullish"></p>
+  </body>
+  <script src="javascript.js"></script>
+</html>

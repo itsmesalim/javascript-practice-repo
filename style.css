@@ -1,0 +1,213 @@
+* {
+  font-size: 20px;
+}
+
+h3 {
+  color: #1a4d03;
+}
+
+h4 {
+  color: #180472;
+}
+
+#main-bulb {
+  display: block;
+  /* flex-flow: column; */
+  width: 500px;
+  height: 300px;
+  border: 1px solid green;
+  justify-items: center;
+  align-content: center;
+}
+
+#bulbKey {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid black;
+  /* background-color: yellow; */
+  margin: 20px;
+}
+
+/* css animation  */
+
+#animatId {
+  width: 100px;
+  height: 100px;
+  background-color: #1a4d03;
+  position: relative;
+  animation: animatMove 5s 1;
+}
+
+@keyframes animatMove {
+  from {
+    top: 5px;
+    left: 30px;
+  }
+
+  to {
+    top: 50px;
+    left: 300px;
+  }
+}
+
+.animationMainDiv {
+  width: 50%;
+  height: 500px;
+  border: 1px solid #720463;
+}
+
+.animationPro {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #04725a;
+  background-color: #720463;
+  position: relative;
+  animation-name: animatNamepro;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: 5;
+  /* animation-iteration-count: infinite; */
+  animation-direction: alternate;
+}
+
+@keyframes animatNamepro {
+  0% {
+    top: 5px;
+    background-color: #720463;
+  }
+
+  20% {
+    top: 20px;
+    left: 20px;
+    background-color: aquamarine;
+  }
+}
+
+.animationDirectionPro {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  border: 1px solid #db9e1a;
+  background-color: #059e63;
+  position: relative;
+  animation-name: animationDirectionName;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+@keyframes animationDirectionName {
+  0% {
+    background-color: #059e63;
+    top: 0px;
+    left: 0px;
+  }
+
+  25% {
+    top: 20px;
+    left: 500px;
+    background-color: #db9e1a;
+  }
+
+  50% {
+    top: 60px;
+    left: 500px;
+    background-color: #180472;
+  }
+
+  75% {
+    top: 60px;
+    left: 0px;
+  }
+
+  100% {
+    top: 0px;
+    left: 0px;
+    background-color: #059e63;
+  }
+}
+
+.animationTimFuncPro {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  background-color: #180472;
+  position: relative;
+  animation-name: animationTimFuncNamePro;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
+  /* animation-direction: alternate; */
+  animation-timing-function: linear;
+}
+
+@keyframes animationTimFuncNamePro {
+  0% {
+    left: 0px;
+  }
+  20% {
+    left: 400px;
+  }
+}
+
+.animationShortnadPro {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  /* animation-name: animationShortnadNamePro;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+
+  animation: animationShortnadNamePro 5s linear 2s infinite alternate;
+}
+
+@keyframes animationShortnadNamePro {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 500px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 500px;
+    top: 100px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 100px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.main-selectorclass {
+  border: 1px solid #720463;
+}
+
+.boxes {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #04725a;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  border: 1px solid #180472;
+  
+}
